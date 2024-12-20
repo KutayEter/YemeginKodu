@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="https://cdn1.ntv.com.tr/gorsel/iKT2TJw_E0KWSRfs_X5Eew.jpg?width=952&height=540&mode=both&scale=both">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YemeğinKodu Hakkında</title>
+  <style>
+    .back-to-home {
+      display: block;
+      margin: 10px auto;
+      padding: 4px 1px;
+      text-align: center;
+      background-color: #f25d00;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      width: 165px;
+      transition: background-color 0.3s ease;
+      }
+      .back-to-home:hover {
+      background-color: #e04b4b;
+      }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(projefoto.jpg);
+      background-size:cover
+      
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 10%;
+      max-height: 150px;
+      max-width: 1000px;
+      margin: 3px auto;
+      overflow: hidden;
+      border-radius: 100px;
+      box-shadow: 0 8px 150px rgba(0, 0, 0, 0.2);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.9);
+      color: #ffffff;
+      border-radius: 50px;
+    }
+
+    .slide h2 {
+      margin: 0;
+      color: #7b4115;
+      font-size: 2rem;
+    }
+
+    .slide p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-top: 10px;
+    }
+
+    .navigation {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .nav-button {
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      color: white;
+      padding: 12px 18px;
+      cursor: pointer;
+      border-radius: 50%;
+      
+    }
+
+    .nav-button:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    @media (max-width: 600px) {
+      .slide p {
+        font-size: 0.9rem;
+      }
+
+      .nav-button {
+        padding: 10px 14px;
+      }
+    }
+    
+  </style>
+
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slides" id="slides">
+    <div class="slide">
+      <h2>AMACIMIZ</h2>
+      <p>YemeğinKodu, lezzetli tarifler ve yemek kültürünü teknolojiyle buluşturan bir platformdur. Amacımız, yemek yapmayı kolay ve keyifli hale getirmektir.</p>
+    </div>
+    <div class="slide">
+      <h2>HEDEFİMİZ</h2>
+      <p>Dünya çapında milyonlarca insanın mutfaklarını geliştirmelerine yardımcı olmak ve yemek yapmayı herkes için erişilebilir kılmak istiyoruz.</p>
+    </div>
+    <div class="slide">
+      <h2>HAKKIMIZDA</h2>
+      <p>YemeğinKodu, Kutay Eter, Salih Ortakaya, Emre Başaraner, Ganime Nur Şimşek, Fazıl Kerem Akkaya tarafından ABÜN YBS'de 2024 yılının aralık ayında kurulmuştur. </p>
+    </div>
+    
+  </div>
+
+  <div class="navigation">
+    <button class="nav-button" id="prev">&#8249;</button>
+    <button class="nav-button" id="next">&#8250;</button>
+  </div>
+</div>
+
+<script>
+  const slides = document.getElementById('slides');
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+
+  let currentIndex = 0;
+  const slideCount = slides.children.length;
+
+  function updateSlide(position) {
+    slides.style.transform = `translateX(-${position * 100}%)`;
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? slideCount - 1 : currentIndex - 1;
+    updateSlide(currentIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === slideCount - 1) ? 0 : currentIndex + 1;
+    updateSlide(currentIndex);
+  });
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slideCount;
+    updateSlide(currentIndex);
+  }, 10000); 
+</script>
+
+
+</body>
+<a href="index.html" class="back-to-home">Anasayfaya Dön</a>
+
+</html>
