@@ -392,14 +392,14 @@ header.sticky{
 .social-links a {
     font-size: 16px;
     font-weight: bold;
-    color: var(--main-color); /* Ana renginiz */
+    color: var(--main-color); 
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
-    color: var(--text-color); /* Yazı rengi değişimi */
-    transform: scale(1.1); /* Hafif büyüme efekti */
+    color: var(--text-color); 
+    transform: scale(1.1); 
 }
 .iletişim-content ul {
     list-style: none;
@@ -458,7 +458,7 @@ header.sticky{
 .iletişim-content h4 {
     font-size: 20px;
     margin-bottom: 20px;
-    color: var(--text-color); /* Yazı rengi */
+    color: var(--text-color); 
 }
 
 .iletişim-content li {
@@ -468,14 +468,14 @@ header.sticky{
 .iletişim-content li a {
     font-size: 16px;
     font-weight: bold;
-    color: var(--main-color); /* Ana renginiz */
+    color: var(--main-color); 
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease; /* Renk ve hareket geçişi */
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .iletişim-content li a:hover {
-    color: var(--text-color); /* Yazı rengi değişimi */
-    transform: translateX(10px); /* Hafif sağa kayma efekti */
+    color: var(--text-color); 
+    transform: translateX(10px); 
 }
 .iletişim-content ul {
     list-style: none;
@@ -496,11 +496,11 @@ header.sticky{
 
 .iletişim-content ul li a:hover {
     color: var(--text-color);
-    transform: translateX(10px); /* Sağa kayma efekti */
+    transform: translateX(10px); 
 }
 /* Tarif isimleri için düzenleme */
 .row h4 {
-    color: var(--main-color); /* Ana rengi kullanarak uyum sağlayalım */
+    color: var(--main-color); 
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -509,43 +509,43 @@ header.sticky{
 }
 
 .row h4:hover {
-    color: var(--text-color); /* Üzerine gelince renk değişimi */
-    transform: scale(1.05); /* Hafif büyüme efekti */
+    color: var(--text-color); 
+    transform: scale(1.05); 
 }
-/* İletişim Bölümü Hizalama */
+
 .main-iletişim {
-    display: grid; /* Grid yapısı ile hizalama */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Her sütunun genişliği minimum 250px olacak */
-    gap: 2rem; /* Aralarındaki boşluk */
-    align-items: start; /* Başlangıç noktasına hizala */
-    justify-content: center; /* Ortaya hizala */
-    text-align: center; /* İçeriği merkezde tut */
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2rem; 
+    align-items: start; 
+    justify-content: center; 
+    text-align: center; 
 }
 
 /* İçerik Başlıkları */
 .iletişim-content h4 {
-    font-size: 1.5rem; /* Başlık boyutunu büyüt */
-    margin-bottom: 1rem; /* Başlık ile içerik arasındaki boşluk */
-    color: var(--main-color); /* Başlık rengini ana renge ayarla */
+    font-size: 1.5rem; 
+    margin-bottom: 1rem; 
+    color: var(--main-color); 
 }
 
-/* İçerik Listesi */
+
 .iletişim-content ul {
-    padding: 0; /* Listeyi kenar boşluklarından temizle */
-    list-style: none; /* Madde işaretlerini kaldır */
+    padding: 0; 
+    list-style: none; 
 }
 
 .iletişim-content ul li {
-    margin-bottom: 10px; /* Liste elemanları arasındaki boşluk */
+    margin-bottom: 10px; 
 }
 
 .iletişim-content ul li a {
-    font-size: 1rem; /* Yazı boyutu */
-    color: var(--text-color); /* Yazı rengi */
-    transition: color 0.3s ease-in-out; /* Hover efekti için geçiş */
+    font-size: 1rem; 
+    color: var(--text-color); 
+    transition: color 0.3s ease-in-out; 
 }
 
 .iletişim-content ul li a:hover {
-    color: var(--main-color); /* Üzerine gelince yazı rengi değişir */
-    transform: translateX(5px); /* Hafif sağa kayma efekti */
+    color: var(--main-color); 
+    transform: translateX(5px); 
 }

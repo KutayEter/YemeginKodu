@@ -26,3 +26,5 @@ sr.reveal('.anasayfa-text',{delay: 200, origin:'left'});
 sr.reveal('.anasayfa-img',{delay: 200, origin:'right'});
 
 sr.reveal('.container, .about, .menu, .iletişim',{delay: 200, origin:'bottom'});
+
+
